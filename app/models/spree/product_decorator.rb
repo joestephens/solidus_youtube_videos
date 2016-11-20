@@ -1,1 +1,3 @@
-Spree::PermittedAttributes.product_attributes << :youtube_url
+Spree::Product < Spree::Base do
+  attr_accessor :youtube_url
+end
