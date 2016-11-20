@@ -1,5 +1,3 @@
-module Spree
-  Product.class_eval do
-    delegate :youtube_url, to: :master
-  end
+module Spree::Product.class_eval do
+  attr_accessible :youtube_url
 end
