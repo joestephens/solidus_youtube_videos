@@ -3,6 +3,10 @@ module SolidusYoutubeVideos
     class InstallGenerator < Rails::Generators::Base
       class_option :auto_run_migrations, type: :boolean, default: false
 
+      def copy_initializer_file
+        copy_file 'spree_videos.rb', "config/initializers/spree_videos.rb"
+      end
+
       def add_migrations
         run 'bundle exec rake railties:install:migrations FROM=solidus_youtube_videos'
       end
