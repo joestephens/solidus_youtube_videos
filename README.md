@@ -25,5 +25,5 @@ Usage
 You can access the field inside the Product view files like so:
 
 ```ruby
-@product.youtube_url
+@product.youtube_ref
 ```
